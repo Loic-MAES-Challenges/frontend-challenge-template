@@ -1,0 +1,17 @@
+$bps: (
+  "dsk": "1440px",
+  "tab": "1024px",
+  "mob": "650px"
+);
+
+@mixin mobile-first($size) {
+  @media screen and (min-width: map-get($bps, $size)) {
+    @content;
+  }
+}
+
+@mixin desktop-first($size) {
+  @media screen and (max-width: map-get($bps, $size)) {
+    @content;
+  }
+}

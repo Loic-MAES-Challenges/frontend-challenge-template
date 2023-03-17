@@ -1,0 +1,33 @@
+@use "fonts";
+
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  font: inherit;
+  background: none;
+  color: currentColor;
+  text-decoration: none;
+  box-sizing: border-box;
+
+  &::before,
+  &::after {
+    box-sizing: border-box;
+  }
+}
+
+body {
+  width: 100%;
+  font-size: 16px;
+  min-height: 100vh;
+  font-family: fonts.$font;
+}
+
+button, a {
+  cursor: pointer;
+}
+
+ul, ol {
+  list-style: none;
+}
