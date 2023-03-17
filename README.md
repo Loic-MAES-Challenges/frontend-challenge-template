@@ -1,2 +1,2 @@
-# FrontEnd Challenge - Image Gallery
+# FrontEnd Challenge - [Challenge Name]
 Todo...
